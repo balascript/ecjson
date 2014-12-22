@@ -1,0 +1,39 @@
+{
+  "name": "ecjson",
+  "version": "0.1.1",
+  "description": "Convert Xml to JSON Easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xml",
+    "json",
+    "parse",
+    "converter"
+  ],
+  "author": {
+    "name": "Balakrishnan",
+    "email": "'bala.thunder68@gmail.com'"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "xmldom": "latest"
+  },
+  "_id": "ecjson@0.1.1",
+  "_shasum": "7ebdc7bb83f8818fccaa1d94c09bbd2a9efab60c",
+  "_from": "ecjson@",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "srbkrishnan",
+    "email": "bala.thunder68@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "srbkrishnan",
+      "email": "bala.thunder68@gmail.com"
+    }
+  ],
+  "readme": "A combination of parser and Json Converter to get Json objects from XML. It is similar to xml2js but its simple.\r\n\r\nInstall:\r\n-------\r\n>npm install ecjson\r\n\r\nExample:\r\n====\r\n```javascript\r\n\r\nvar ecjson=require('ecjson');\r\n\r\n ecjson.XmlToJson(\"<root>Hello</root>\", function (JsonData) {\r\n                  console.log(JsonData);\r\n              });\r\n````\r\n\r\nConvert Complex XML to Json easily. All the Attributes of any element will be given as the data-members in json.\r\n\r\nFor Example, the xml:\r\n\r\n````xml\r\n<messages>\r\n\t<note ID=\"501\">\r\n\t\t<to sendAs=\"email\">Maxwell</to>\r\n\t\t<from>Annabelle</from>\r\n\t\t<heading style=\"Font:'Calibri'\">Reminder</heading>\r\n\t\t<body>Don't forget me this weekend!</body>\r\n\t</note>\r\n</messages>\r\n````\r\nwill be converted as,\r\n\r\n````javascript\r\n\r\n{\"messages\":\r\n\t{\"note\":\r\n\t\t{\r\n\t\t\"ID\":\"501\",\r\n\t\t\"to\":\r\n\t\t\t{\"sendAs\":\"email\",\r\n\t\t\t\"value\":\"Maxwell\"},\r\n\t\t\"from\":\r\n\t\t\t{\"value\":\"Annabelle\"},\r\n\t\t\"heading\":\r\n\t\t\t{\"style\":\"Font:'Calibri'\",\r\n\t\t\t\"value\":\"Reminder\"},\r\n\t\t\"body\":\r\n\t\t\t{\"value\":\"Don't forget me this weekend!\"}\r\n\t\t}\r\n\t}\r\n}\r\n\r\n\r\n````",
+  "readmeFilename": "README.md"
+}
