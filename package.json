@@ -1,6 +1,6 @@
 {
   "name": "ecjson",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Convert Xml to JSON Easily",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,10 @@
     "email": "'bala.thunder68@gmail.com'"
   },
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srbkrishnan/ecjson"
+  },
   "dependencies": {
     "xmldom": "latest"
   },
