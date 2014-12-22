@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 A combination of parser and Json Converter to get Json objects from XML. It is similar to xml2js but its simple.
 
 Install:
@@ -54,9 +54,3 @@ will be converted as,
 
 
 ````
-=======
-ecjson
-======
-
-Convert Xml to JSON Easily using nodejs
->>>>>>> parent of 5b5f7e2... Revert "Initial commit"
