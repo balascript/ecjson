@@ -16,13 +16,13 @@
     "name": "Balakrishnan",
     "email": "'bala.thunder68@gmail.com'"
   },
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/srbkrishnan/ecjson"
   },
   "dependencies": {
-    "xmldom": "latest"
+    "xmldom": "0.1.19"
   },
   "_id": "ecjson@0.1.1",
   "_shasum": "7ebdc7bb83f8818fccaa1d94c09bbd2a9efab60c",
